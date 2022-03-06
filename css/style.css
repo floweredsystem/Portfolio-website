@@ -22,29 +22,26 @@ strong{
 }
 
 .principal {
-  max-width: 900px;
+  max-width: 90rem;
   margin: 13.5rem auto;
 }
 
 .card {
   background: rgb(40, 58, 138);
-  max-width: 900px;
-  /* margin: 15px auto; */
-  padding: 20px;
+  max-width: 90rem;
+  padding: 2rem;
   background: rgb(172,79,125);
   background: linear-gradient(0deg, rgba(172,79,125,1) 6%, rgba(48,68,113,1) 100%);
   overflow: hidden;
   display: flex;
   background: rgba(82, 181, 247, 0.2);
   background: rgb(4 32 49 / 70%);
-  /* align-items: center; */
-  /* background: url(img\Card-background.png); */
 }
 
 .card h1 {
   font-size: 7rem;
   font-family: 'Lato', sans-serif;
-  padding: 25px;
+  padding: 2.5rem;
   width: 46.2rem;
   display: inline-block;
 }
@@ -56,7 +53,7 @@ strong{
 .label {
   font-family: 'Courier Prime', monospace;
   font-size: 2rem;
-  padding: 10px 0;
+  padding: 1rem 0;
   display: inline-flex;
 
 }
@@ -66,9 +63,9 @@ strong{
 }
 
 .pfpSection {
-  width: 240px;
+  width: 24rem;
   max-width: 24rem;
-  margin-right: 100px;
+  margin-right: 10rem;
   margin-top: 3.8rem;
   justify-items: center;
   align-items: center;
@@ -81,7 +78,7 @@ strong{
 
 
 .mainSection {
-  padding: 20px 0;
+  padding: 2rem 0;
   background: black;
   background: url(https://cdn.discordapp.com/attachments/847540317796565064/949487441969037352/blue-smoky-art-abstract-background_-_copia.jpg);
   background-size: cover;
@@ -107,14 +104,14 @@ strong{
   margin: 0;
   background: url(img/border.png);
   box-sizing:content-box;
-  height: 100px;
+  height: 10rem;
   display: block;
   width: 100%;
 }
 
 .border img {
   width: 100%;
-  height: 100px;
+  height: 10rem;
   box-sizing: border-box;
 }
 
@@ -126,15 +123,27 @@ strong{
 .socialMedias {
   display: flex;
   justify-content: flex-start;
+  height: 6rem;
 }
 
 .socialMedias li {
+  /* min-width: 6rem; */
+  width: 6.5rem;
   padding: 1rem;
+  /* position: absolute; */
 }
 
 .socialMedias img {
   width: 5.1rem;
   height: auto;
+  transition-property: transform;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  position:static;
+}
+
+.socialMedias img:hover {
+  transform: scale(1.3);
 }
 
 .blockContainer {
@@ -165,6 +174,42 @@ strong{
 
 .projects {
   background: rgb(233 212 114);
+}
+
+.projects .gallery {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+}
+
+.projects .gallery ul{
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  /* align-self: center; */
+}
+
+.projects .gallery li {
+  display: inline-flex;
+}
+
+.projects .gallery img {
+  min-width: 200px;
+  min-height: 300px;
+  width: 200px;
+  height: 300px;
+  position: relative;	
+  box-shadow: 23px 18px 2px 0px #c9ae2f;
+  transition-property: box-shadow;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+}
+
+.projects .gallery img:hover {
+  position: relative;	
+  border: 2px solid black;
+  box-shadow: 35px 33px 2px 0px #c9ae2f;
 }
 
 footer {
