@@ -1,0 +1,176 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+strong{
+  font-weight: bold;
+  
+}
+
+.principal {
+  max-width: 900px;
+  margin: 13.5rem auto;
+}
+
+.card {
+  background: rgb(40, 58, 138);
+  max-width: 900px;
+  /* margin: 15px auto; */
+  padding: 20px;
+  background: rgb(172,79,125);
+  background: linear-gradient(0deg, rgba(172,79,125,1) 6%, rgba(48,68,113,1) 100%);
+  overflow: hidden;
+  display: flex;
+  background: rgba(82, 181, 247, 0.2);
+  background: rgb(4 32 49 / 70%);
+  /* align-items: center; */
+  /* background: url(img\Card-background.png); */
+}
+
+.card h1 {
+  font-size: 7rem;
+  font-family: 'Lato', sans-serif;
+  padding: 25px;
+  width: 46.2rem;
+  display: inline-block;
+}
+
+.whiteText {
+  color: white;
+}
+
+.label {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2rem;
+  padding: 10px 0;
+  display: inline-flex;
+
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.pfpSection {
+  width: 240px;
+  max-width: 24rem;
+  margin-right: 100px;
+  margin-top: 3.8rem;
+  justify-items: center;
+  align-items: center;
+}
+.profilePic {
+  width: 22rem;
+  height: 22rem;
+}
+
+
+
+.mainSection {
+  padding: 20px 0;
+  background: black;
+  background: url(https://cdn.discordapp.com/attachments/847540317796565064/949487441969037352/blue-smoky-art-abstract-background_-_copia.jpg);
+  background-size: cover;
+  padding-bottom: 0;
+}
+
+.buttons {
+  clear: both;
+  display: inline-block;
+  padding: 0;
+  display: none;
+}
+
+
+.button {
+  font-size: 3rem;
+  background: white;
+  display: inline-block;
+}
+
+.border{
+  padding: 0;
+  margin: 0;
+  background: url(img/border.png);
+  box-sizing:content-box;
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+
+.border img {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.socialMediaBar {
+
+
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.socialMedias li {
+  padding: 1rem;
+}
+
+.socialMedias img {
+  width: 5.1rem;
+  height: auto;
+}
+
+.blockContainer {
+  display: flex;
+  justify-content: center;
+  
+  /* padding-right: max(15px, 5%);*/
+  
+
+  
+}
+
+.block {
+  clear: both;
+  padding: 2rem 3.2rem;
+  max-width: 120rem;
+  width: min(120rem, 80%);
+}
+
+.block h2 {
+  font-size: 9.2rem;
+  font-family: 'Staatliches', cursive;
+}
+
+.block p {
+  font-size: 2.6rem;
+}
+
+.projects {
+  background: rgb(233 212 114);
+}
+
+footer {
+  background: black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
