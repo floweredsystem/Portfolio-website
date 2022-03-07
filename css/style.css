@@ -163,7 +163,7 @@ strong{
   transition-property: transform;
   transition-duration: .2s, 1s;
   transition-timing-function: linear;
-  position:static;
+  position: static;
 }
 
 .socialMedias img:hover {
@@ -194,6 +194,7 @@ strong{
 
 .block p {
   font-size: 2.6rem;
+  padding: 20px;
 }
 
 .projects {
@@ -209,13 +210,83 @@ strong{
 
 .projects .galleryElement {
   width: 26rem;
-  /* display: flex; */
-  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
   
 }
 
+
+.galleryElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.galleryElement img:hover {
+  /* position: relative;	 */
+  transform: scale(1.1);
+  box-shadow: 35px 33px 2px 0px #c9ae2f;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  margin: 5.1rem 0;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  box-shadow: 23px 18px 2px 0px #c9ae2f;
+  /* position: relative; */
+  transition-property: box-shadow transform opacity;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  /* background: white; */
+}
+
+.imageContainer:hover {
+  transform: scale(1.1);
+}
+
+.imageContainer .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255), 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 30px;
+  height: 30px; */
+}
+
+.imageContainer .overlay:hover {
+  background: rgb(255, 255, 255, 30%);
+}
+
+.imageContainer .overlay span {
+  display: inline-block;
+  padding: 2rem;
+  background: black;
+  /* height: 7rem; */
+  /* min-height: 4rem; */
+  color: white;
+  font-size: 3rem;
+  opacity: 0;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.imageContainer:hover .overlay span {
+  opacity: 1;
+}
+
 .galleryElement h3 {
-  display: block;
+  /* display: block; */
   font-size: 2.7rem;
   font-weight: bold;
   padding: 10px;
@@ -227,30 +298,6 @@ strong{
   font-size: 2.2rem;
 }
 
-
-
-
-
-.projects .galleryElement img {
-  min-width: 100%;
-  min-height: 50rem;
-  width: 100%;
-  height: 300px;
-  margin: 30px 0;
-  /* position: relative;	 */
-  box-shadow: 23px 18px 2px 0px #c9ae2f;
-  transition-property: box-shadow transform;
-  transition-duration: .2s, 1s;
-  transition-timing-function: linear;
-  display: block;
-  align-self: center;
-}
-
-.projects .gallery img:hover {
-  /* position: relative;	 */
-  transform: scale(1.1);
-  box-shadow: 35px 33px 2px 0px #c9ae2f;
-}
 
 footer {
   background: black;
