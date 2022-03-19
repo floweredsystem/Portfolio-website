@@ -40,7 +40,6 @@
 					<ul class="buttons">
 						
 						<a href="#contact"><li class="button">Get in Contact</li></a>
-						<a href=""><li class="button">Another button</li></a>
 
 					</ul>
 				</section>
@@ -49,7 +48,7 @@
 				<section class="socialMediaBar">
 					<ul class="socialMedias">
 						<li><a href="https://twitter.com/FloweredSystem" target="_blank"><img src="img/icons/twitter-white.png" alt="Twitter"></a></li>
-						<li><a href="" target="_blank"><img src="img/icons/linkedin-white.png" alt="LinkedIn"></a></li>
+						<!-- <li><a href="" target="_blank"><img src="img/icons/linkedin-white.png" alt="LinkedIn"></a></li> -->
 						<li><a href="https://github.com/floweredsystem" target="_blank"><img src="img/icons/GitHub-white.png" alt="GitHub"></a></li>
 						<li><a href=""><img src="img/icons/email-white.png" alt="email"></a></li>
 					</ul>
@@ -124,7 +123,9 @@
 
 					</section>
 			</section>
-
+			<div class="border">
+				<img src="img/design/borders/border-white-d2u.png" alt="">
+			</div>
 		</section>
 		
 		<section class="blockContainer contact" id="contact">
@@ -139,14 +140,21 @@
 							<input type="text" name="name" required>
 						</section>
 						<section class="replySection">
-							<label for="reply">Form of contact: (where do you want me to contact you) </label>
+							<label for="reply">email: </label>
 							<input type="text" name="reply" required>
 						</section>
 						
+						<section class="messageSection">
+							<label for="message">Your Message: </label>
+
+							<textarea name="message" id="" cols="30" rows="10" required></textarea>
+							
+						</section>
+						<section class="buttonSection">
+							<button class="submitButton" type="submit">Send</button>	
+						</section>
 						
-						<label for="message">Message: </label>
-						<input type="text" name="message" required>
-						<button type="submit">Send</button>
+						
 					</form>
 				</section>
 				
@@ -157,7 +165,6 @@
 		
 
 		<footer>
-			<a href="https://www.freepik.com/photos/liquid-texture">Liquid texture photo created by rawpixel.com - www.freepik.com</a>
 		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
