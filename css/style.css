@@ -298,6 +298,45 @@ strong{
   font-size: 2.2rem;
 }
 
+/* CONTACT */
+
+.contact {
+  display: flex;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 4.7rem;
+  background-color: #18578e;
+  color: white;
+  width: 80%;
+  /* background: rgb(28,78,98);
+  background: linear-gradient(0deg, rgba(28,78,98,1) 6%, rgba(78,255,238,1) 100%) */
+  border: 11px dashed #1C6EA4;
+  border-radius: 23px;
+  outline-offset: 15px;
+  outline: -4px solid red;
+
+  outline-offset: 15px;
+}
+
+.contact .formContainer {
+  display: flex;
+  justify-content: center;
+  /* background-color: #18578e; */
+
+}
+
+.contact form label {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact form section {
+  margin: 10px 0;
+}
+
 
 footer {
   background: black;
